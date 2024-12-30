@@ -1,5 +1,5 @@
 # Copyright 2024 Raymond C. Turner
-
+#
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -136,7 +136,7 @@ def toggle_theme():
         version_label.config(bg="white", fg="black")
 
 def show_about():
-    messagebox.showinfo("About", "Steganography Tool\nVersion 1.0\n\nDeveloped by: Raymond C. Turner\nThis tool allows you to encode and decode messages hidden in images.")
+    messagebox.showinfo("About", "Steganography Tool\nVersion 1.0.0\n\nDate 30/12/2024\n\nDeveloped by: Raymond C. Turner\nThis tool allows you to encode and decode messages hidden in images.")
 
 # Tkinter GUI Setup
 root = tk.Tk()
