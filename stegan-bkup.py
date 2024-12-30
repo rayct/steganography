@@ -136,7 +136,7 @@ def toggle_theme():
         version_label.config(bg="white", fg="black")
 
 def show_about():
-    messagebox.showinfo("About", "Steganography Tool\nVersion 1.0.1\n\nDate 30/12/2024\n\nDeveloped by: Raymond C. Turner\nThis tool allows you to encode and decode messages hidden in images.")
+    messagebox.showinfo("About", "Steganography Tool\nVersion 1.0.1\n\nDate 30/12/2024\n\nAuthor: Raymond C. Turner\nThis tool allows you to encode and decode messages hidden in images.")
 
 # Tkinter GUI Setup
 root = tk.Tk()
