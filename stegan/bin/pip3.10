@@ -1,4 +1,4 @@
-#!/home/ray/Repos/github.com/rayct/steganography/stegan/bin/python3
+#!/home/ray/Repos/github.com/rayct/steganography/stegan/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

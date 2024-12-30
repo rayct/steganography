@@ -9,7 +9,7 @@ __pycache__/
 *.so
 
 # Virtual Environments
-stegan/
+stegan
 env/
 venv/
 ENV/
