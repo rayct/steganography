@@ -1,0 +1,60 @@
+# Python specific .gitignore
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual Environments
+env/
+venv/
+ENV/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Config files
+*.ini
+*.cfg
+*.conf
+
+# macOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+*.txt
+
+# Environment files
+.env
+.env.*
+
+# MyPy cache
+.mypy_cache/
+
+# PyTest cache
+.pytest_cache/
+
+# Coverage files
+.coverage
+*.cover
+
+# PyCharm project files
+.idea/
+
+# VSCode project files
+.vscode/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
