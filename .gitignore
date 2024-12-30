@@ -59,3 +59,5 @@ build/
 dist/
 *.egg-info/
 
+# Backup files
+stegan-backup.py

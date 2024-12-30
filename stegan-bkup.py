@@ -108,18 +108,38 @@ def decode_ui():
     except Exception as e:
         messagebox.showerror("Error", f"Failed to decode: {e}")
 
+def toggle_theme():
+    if root.cget("bg") == "white":
+        root.config(bg="black")
+        frame.config(bg="black")
+        welcome_label.config(bg="black", fg="white")
+        version_label.config(bg="black", fg="white")
+    else:
+        root.config(bg="white")
+        frame.config(bg="white")
+        welcome_label.config(bg="white", fg="black")
+        version_label.config(bg="white", fg="black")
+
+def show_about():
+    messagebox.showinfo("About", "Steganography Tool\nVersion 1.0\n\nDeveloped by Your Name\nThis tool allows you to encode and decode messages hidden in images.")
+
 # Tkinter GUI Setup
 root = tk.Tk()
 root.title("Steganography Tool")
+root.config(bg="white")
 
-frame = tk.Frame(root, padx=10, pady=10)
+frame = tk.Frame(root, padx=10, pady=10, bg="white")
 frame.pack()
 
-welcome_label = tk.Label(frame, text="Steganography Encoder and Decoder", font=("Helvetica", 16))
+welcome_label = tk.Label(frame, text="Steganography Encoder and Decoder", font=("Helvetica", 16), bg="white", fg="black")
 welcome_label.pack(pady=10)
 
 tk.Button(frame, text="Encode Message", command=encode_ui, width=20).pack(pady=5)
 tk.Button(frame, text="Decode Message", command=decode_ui, width=20).pack(pady=5)
+tk.Button(frame, text="Toggle Theme", command=toggle_theme, width=20).pack(pady=5)
+tk.Button(frame, text="About", command=show_about, width=20).pack(pady=5)
+
+version_label = tk.Label(root, text="Version 1.0", bg="white", fg="black", font=("Helvetica", 10))
+version_label.pack(side=tk.BOTTOM, anchor=tk.E, padx=10, pady=5)
 
 root.mainloop()
-
