@@ -1,5 +1,5 @@
 # Copyright 2024 Raymond C. Turner
-
+#
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -136,7 +136,10 @@ def toggle_theme():
         version_label.config(bg="white", fg="black")
 
 def show_about():
-    messagebox.showinfo("About", "Steganography Tool\nVersion 1.0.0\n\nDate 30/12/2024\n\nDeveloped by: Raymond C. Turner\nThis tool allows you to encode and decode messages hidden in images.")
+    messagebox.showinfo("About", "Steganography Tool\nVersion 1.0.1\n\nDate 30/12/2024\n\nDeveloped by: Raymond C. Turner\nThis tool allows you to encode and decode messages hidden in images.")
+
+def close_application():
+    root.destroy()
 
 # Tkinter GUI Setup
 root = tk.Tk()
@@ -153,8 +156,9 @@ tk.Button(frame, text="Encode Message", command=encode_ui, width=20).pack(pady=5
 tk.Button(frame, text="Decode Message", command=decode_ui, width=20).pack(pady=5)
 tk.Button(frame, text="Toggle Theme", command=toggle_theme, width=20).pack(pady=5)
 tk.Button(frame, text="About", command=show_about, width=20).pack(pady=5)
+tk.Button(frame, text="Close", command=close_application, width=20).pack(pady=5)
 
-version_label = tk.Label(root, text="Version 1.0", bg="white", fg="black", font=("Helvetica", 10))
+version_label = tk.Label(root, text="Version 1.0.1", bg="white", fg="black", font=("Helvetica", 10))
 version_label.pack(side=tk.BOTTOM, anchor=tk.E, padx=10, pady=5)
 
 root.mainloop()
