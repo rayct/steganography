@@ -13,6 +13,11 @@ This project provides a simple tool to encode and decode secret messages within 
 
 3. **User-Friendly Interface**:
    - Easy-to-use GUI for encoding and decoding messages.
+   - **Light/Dark Mode Toggle**: Switch between light and dark themes for the interface.
+   - **About Box**: Provides details about the application and its version.
+
+4. **Version Control**:
+   - A version label displayed at the bottom right of the UI for quick reference.
 
 ## Requirements
 
@@ -30,13 +35,32 @@ This project provides a simple tool to encode and decode secret messages within 
    cd <repository_folder>
    ```
 
-2. Install the required dependencies:
+2. **Set Up a Virtual Environment**:
+
+   Create a virtual environment to isolate dependencies:
+
+   ```bash
+   python -m venv venv
+   ```
+
+   Activate the virtual environment:
+
+   - **On Windows**:
+     ```bash
+     venv\Scripts\activate
+     ```
+   - **On macOS/Linux**:
+     ```bash
+     source venv/bin/activate
+     ```
+
+3. Install the required dependencies:
 
    ```bash
    pip install pillow
    ```
 
-3. Run the application:
+4. Run the application:
 
    ```bash
    python steganography_ui.py
@@ -59,6 +83,16 @@ This project provides a simple tool to encode and decode secret messages within 
 2. Click on the **Decode Message** button.
 3. Select the encoded image file.
 4. The hidden message will be displayed in a pop-up window.
+
+### Switching Themes
+
+1. Click the **Toggle Theme** button to switch between light and dark modes.
+2. The interface will update immediately to reflect the selected theme.
+
+### Viewing Application Details
+
+1. Click the **About** button to view details about the application, including its version.
+2. A pop-up box will appear with the information.
 
 ## How It Works
 
@@ -115,5 +149,3 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 - The Pillow library for image processing.
 - Tkinter for providing an easy-to-use GUI toolkit.
-
-
